@@ -22,7 +22,7 @@ owner = settings['owner']
 response = requests.get(endpoint+"lists/"+listID+"/accounts", auth=BearerAuth(token))
 follow = response.json()
 
-to_follow={}
+to_follow = {}
 for x in range(len(follow)):
     to_follow[x] = follow[x]['acct']
 y=len(to_follow)
