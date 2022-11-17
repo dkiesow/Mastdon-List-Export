@@ -27,7 +27,6 @@ for x in range(len(follow)):
 y=len(to_follow)
 to_follow[y] = owner
 
-cols = ['account']
 with open(path, 'w', newline='') as csvfile:
     fieldnames = ['Account Address']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
