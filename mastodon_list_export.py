@@ -1,5 +1,4 @@
 import requests
-import json
 import csv
 import config as cfg
 
