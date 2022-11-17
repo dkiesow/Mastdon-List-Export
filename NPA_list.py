@@ -14,10 +14,11 @@ settings = cfg.settings_local
 #settings = cfg.settings_remote
 endpoint = settings['endpoint']
 token = settings['token']
+listID = settings['list']
 path = settings['path']
 owner = settings['owner']
 
-response = requests.get(endpoint+"lists/3/accounts", auth=BearerAuth(token))
+response = requests.get(endpoint+"lists/"+listID+"/accounts", auth=BearerAuth(token))
 follow = response.json()
 
 to_follow={}
