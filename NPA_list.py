@@ -10,8 +10,9 @@ class BearerAuth(requests.auth.AuthBase):
         r.headers["authorization"] = "Bearer " + self.token
         return r
 
-settings = cfg.settings_local
-#settings = cfg.settings_remote
+#settings = cfg.settings_local
+settings = cfg.settings_remote
+#selects config settings from config.py json file
 endpoint = settings['endpoint']
 token = settings['token']
 listID = settings['list']
