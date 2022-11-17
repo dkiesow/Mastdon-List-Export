@@ -8,6 +8,6 @@ In terminal, that command is: https://mastodon.example/api/v1/lists
 
 You need to use the token to access these API calls. In terminal that looks like:
 
-curl \
--H 'Authorization: Bearer token_goes_here’ \
+curl \\
+-H 'Authorization: Bearer token_goes_here’ \\
 https://mastodon.example/api/v1/lists
