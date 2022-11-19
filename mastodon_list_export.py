@@ -28,10 +28,10 @@ y=len(to_follow)
 to_follow[y] = owner
 
 with open(path, 'w', newline='') as csvfile:
-    fieldnames = ['Account Address']
+    fieldnames = ['Account address', 'Show boosts']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
     for key in to_follow:
-        writer.writerow({'Account Address': to_follow[key]})
+        writer.writerow({'Account address': to_follow[key], 'Show boosts': 'TRUE'})
 
